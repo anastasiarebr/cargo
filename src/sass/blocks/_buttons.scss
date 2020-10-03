@@ -1,0 +1,17 @@
+.btn{
+    height: 47px;  
+    background-color: $main-color; 
+    border: none;
+    border-radius: 30px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 0;
+    padding: 20px 23px;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    &:hover{
+       background-color: $hover-color;
+    }
+      
+      
+}

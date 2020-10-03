@@ -1,0 +1,203 @@
+@media (max-width:  1200px){
+    .header{
+        &__phone{
+            a{
+                font-size: 16px;
+            }
+            
+        }
+        &__logo{
+            width: 80px;
+            height: 80px;
+        }
+        &__contacts{
+            width: 315px;
+        }
+        &__menu{
+            &-item{
+                font-size: 13px;
+            }
+        }
+    }
+    .promo{
+        &__title{
+            font-size: 63px;
+        }
+        &__subtitle{
+            font-size: 38px;
+        }
+    }
+}
+
+@media (max-width:  991px){
+    .header{
+        &__contacts{
+            width: 560px;
+        }
+        &__menu{
+            margin-left: 10px;
+            &-item{
+                &:nth-child(3){
+                    border-right: none;
+                }
+            }
+        }
+    }
+    .promo{
+        &__title{
+            font-size: 48px;
+        }
+        &__subtitle{
+            font-size: 29px;
+        }
+        &__item{
+            &-text{
+                font-size: 13px;
+            }
+        }
+        &__divider{
+            &-line{
+                width: 340px;
+            }
+        }
+    }
+}
+
+
+@media (max-width:  767px){
+    .header{
+        position: relative;
+        &__menu{
+            z-index: 3;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            // left: -15px;
+            left: calc(-100vh - 15px);
+            width: 100vh;
+            height: 100vh;
+            padding: 20px 15px;
+            background-color: rgba(0,0,0,0.9);
+            transition: 0.6s all;
+            &_active{
+                left: -15px;
+            }
+            &-item{
+                padding-right: 0;
+                border: none;
+                margin-top: 15px;
+                font-size: 27px;
+            }
+        }
+        &__logo{
+            margin-right: 30px;
+        }
+        &__contacts{
+            margin-right: 55px;
+        }
+    }
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: -9px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 12px;
+        z-index: 4;
+
+        span{
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #fff;
+            margin-bottom: 4px;
+            transition: 0.5s all;
+        }
+        &_active{
+            span{
+                margin-bottom: -2px;
+                &:nth-child(1){
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2){
+                    display: none;
+                }
+                &:nth-child(3){
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+    .promo{
+        padding-bottom: 60px;
+        &__descr{
+            font-size: 19px;
+        }
+        &__subtitle{
+            font-size: 31px;
+            margin-top: 35px;
+        }
+        &__divider{
+            &-line{
+                width: 230px;
+            }
+        }
+    }
+
+}
+
+@media (max-width:  575px){
+    .header{
+        &__phone{
+            display: none;
+        }
+        &__logo{
+            margin-right: 19px;
+        }
+        &__contacts{
+            margin-right: 20px;
+        }
+        &__menu{
+            &_active{
+                width: 55vh;
+            }
+        }
+    }
+    .btn{
+        font-size: 11px;
+    }
+    .hamburger{
+        right: 0;
+    }
+    .promo{
+        &__item{
+            margin-top: 15px;
+        }
+        &__title{
+            font-size: 28px;
+            margin-top: 24px;
+        }
+        &__subtitle{
+            font-size: 20px;
+            margin-top: 24px;
+        }
+        &__descr{
+            font-size: 16px;
+        }
+        &__divider{
+            &-line{
+                width: 100px;
+            }
+        }
+        &__items{
+            margin-top: 23px;
+
+        }
+    }
+
+
+}
