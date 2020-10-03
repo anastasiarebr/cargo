@@ -1,10 +1,16 @@
 .title{
-    &__promo{
-        font-size: 72px;
-        color: $main-color;
+    &_fz26{
+        font-size: 26px;
+        color: rgb(46, 46, 46);
         font-weight: bold;
         text-transform: uppercase;
-        line-height: 1.2;
         text-align: center;
     }
+    &_fz16{
+        font-size: 16px;
+        color: $main-color;
+        font-weight: bold;
+        text-align: center;
+      }
+      
 }

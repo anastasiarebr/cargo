@@ -1,0 +1,33 @@
+.advantages{
+    background-color: #f3f3f3;
+    padding-top: 56px;
+    padding-bottom: 50px;
+    min-height: 590px;
+    &__descr{
+        color: #3a3a3a;
+        font-size: 16px;
+        line-height: 1.375;
+        margin-top: 8px;
+          
+    }
+    &__items{
+        ul{
+            padding: 0 0 0 98px;
+            margin: 0;
+            li{
+                list-style-type: none;
+                position: relative;
+                margin-top: 40px;
+                
+            }
+        }
+    }
+    &__img{
+        position: absolute;
+        top: 5px;
+        left: -83px;
+    }
+    &__subtitle{
+        text-align: left;
+    }
+}
