@@ -1,11 +1,14 @@
 .price{
+    
     padding: 58px 0 40px 0;
     &__items{
         margin-top: 16px;
     }
     &__item{
+        height: 380px;
         border: 1px solid rgba(0, 0, 0, 0.1);
-        padding-bottom: 25px;
+        position: relative;
+        // padding-bottom: 25px;
         
         &-header{
             height: 60px;
@@ -56,9 +59,12 @@
             margin-left: 24px;
         }
         &-btn{
+            position: absolute;
             display: block;
             margin: 0 auto;
-            margin-top: 28px;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
 
         }
     }

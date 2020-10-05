@@ -51,6 +51,7 @@
             font-size: 29px;
         }
         &__item{
+            
             &-text{
                 font-size: 13px;
             }
@@ -59,6 +60,16 @@
             &-line{
                 width: 340px;
             }
+        }
+    }
+    .price{
+        &__item{
+            margin-bottom: 20px;
+        }
+    }
+    .consultation{
+        &__inputs{
+            padding: 0;
         }
     }
 }
@@ -163,6 +174,32 @@
             }
         }
     }
+    .price{
+        &__items{
+            margin: 0;
+        }
+        &__item{
+            margin-top: 16px;
+            &-descr{
+                font-size: 13px;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .consultation{
+        padding: 20px 0 60px 0;
+        &__inputs{
+            flex-wrap: wrap;
+            padding: 0 40px;
+            &-input{
+                width: 50%;
+                &:nth-child(3){
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width:  575px){
@@ -212,6 +249,20 @@
             margin-top: 23px;
 
         }
+    }
+    .consultation{
+        &__inputs{
+            padding: 0 20px;
+            &-input{
+                width: 100%;
+                &:nth-child(2){
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .btn{
+        line-height: 13px;
     }
 
 
