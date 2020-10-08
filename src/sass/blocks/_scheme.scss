@@ -1,0 +1,32 @@
+.scheme{
+    background-color: #f3f3f3;
+    padding: 50px 0 45px 0;
+    &__item{
+        margin-top: 40px;
+    }
+    &__title{
+        font-size: 16px;
+        color: $main-color;
+        font-weight: bold;
+        line-height: 1.25;
+        text-align: center;
+        margin-top: 17px;
+    }
+    &__subtitle{
+        font-size: 16px;
+        color: #3a3a3a;
+        font-weight: 300;
+        line-height: 1.25;
+        text-align: center;
+        margin-top: 10px;
+    }
+    &__img{
+        height: 50px;
+        width: 50px;
+        display: block;
+        margin: 0 auto;
+        img{
+            width: 100%;
+        }
+    }
+}
