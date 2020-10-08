@@ -77,6 +77,11 @@
             font-size: 14px;
         }
     }
+    .questions{
+        &__wrapper{
+            margin: 0;
+        }
+    }
 }
 
 
@@ -205,6 +210,23 @@
             }
         }
     }
+    .questions{
+        &__inputs{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, auto) auto;
+            &-input{
+                input{
+                    margin-top: 10px;
+                }
+            }
+            &-textarea{
+                grid-column: 1 / 2;
+                textarea{
+                    height: 90px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width:  575px){
@@ -264,6 +286,7 @@
                     margin-top: 10px;
                 }
             }
+            
         }
     }
     .btn{
@@ -274,6 +297,9 @@
             font-size: 14px;
         }
     }
-
-
+    .questions{
+        &__inputs{
+            margin: 0 20px;
+        }
+    }
 }

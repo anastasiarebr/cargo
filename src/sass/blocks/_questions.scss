@@ -1,0 +1,82 @@
+.questions{
+    padding: 62px 0 82px 0;
+    background: url('../img/plane_bg.jpg') center (center / cover) no-repeat;
+    min-height: 440px;
+    &__wrapper{
+        margin: 0 120px;
+        &-header{
+            display: block;
+            // height: 70px;
+            background-color: $form-color;
+            padding: 20px 0;
+        }
+        &-body{
+            display: block;
+            padding: 18px 0 25px 0;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+    }
+    &__title{
+        font-size: 19px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 13px;
+        text-align: center;
+          
+    }
+    &__subtitle{
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        text-align: center;  
+        line-height: 10px; 
+    }
+    &__btn{
+        display: block;
+        width: auto;
+        margin: 0 auto;
+        margin-top: 15px;
+        
+    }
+    
+    &__inputs{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 46px auto;
+        margin: 0 40px;
+        &-input{
+            padding: 0 2px;
+            input{
+                width: 100%;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                border-radius: 30px;
+                margin: 0 2px;
+                padding-left: 25px;
+                font-size: 13px;
+                color: rgba(16, 16, 16, 0.702);
+                line-height: 47px; 
+            }
+            
+        }
+        &-textarea{
+            grid-column: 1 / 4;
+            padding: 0 2px;
+            margin-top: 10px;
+            textarea{
+                width: 100%;
+                height: 74px;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                border-radius: 15px;
+                margin: 0 2px;
+                padding-left: 20px;
+                font-size: 13px;
+                color: rgba(16, 16, 16, 0.702);
+                line-height: 47px;
+                resize: none;
+            }
+
+        }
+    }
+    
+}
