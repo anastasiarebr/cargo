@@ -82,6 +82,30 @@
             margin: 0;
         }
     }
+    .footer{
+        &__logo{
+            width: 340px;
+            &-img{
+                margin-right: 10px;
+                width: 55px;
+                height: 55px;
+            }
+            &-text{
+                font-size: 14px;
+            }
+        }
+        &__contacts{
+            width: 295px;
+        }
+        &__phone{
+            a{
+                font-size: 14px;
+            }
+            span{
+                font-size: 12px;
+            }
+        }
+    }
 }
 
 
@@ -227,6 +251,17 @@
             }
         }
     }
+    .footer{
+        &__logo{
+            width: 70px;
+            &-text{
+                display: none;
+            }
+        }
+        &__contacts{
+            width: 315px;
+        }
+    }
 }
 
 @media (max-width:  575px){
@@ -300,6 +335,14 @@
     .questions{
         &__inputs{
             margin: 0 20px;
+        }
+    }
+    .footer{
+        &__logo{
+            width: 230px;
+        }
+        &__phone{
+            display: none;
         }
     }
 }

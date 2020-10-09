@@ -1,0 +1,61 @@
+.footer{
+    min-height: 120px;
+    
+    background-color: $form-color;
+    padding: 25px 0 30px 0;
+    .container{
+        position: relative;
+    }
+    &__wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        display: flex;
+        width: 530px;
+        height: 70px;
+        justify-content: space-between;
+        align-items: center;
+        &-img{
+            width: 70px;
+            height: 70px;
+            display: inline-block;
+            img{
+                width: 100%;
+                display: inline-block;
+            }
+        }
+        &-text{
+            font-size: 16px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }  
+    }
+    &__contacts{
+        
+        width: 342px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__phone{
+        display: flex;
+        flex-direction: column;
+        span{
+            font-size: 14px;
+            color: rgb(255, 255, 255);
+            line-height: 1.714;
+            text-align: right;
+        }
+        a{
+            font-size: 19px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            line-height: 1.263;
+            text-align: right;
+        }
+    }
+    
+}
